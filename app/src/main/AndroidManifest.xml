@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tataadin.myicon">
+    <application
+            android:icon="@drawable/icon"
+            android:label="@string/theme_title">
+        <activity android:name="com.tataadin.myicon.MainActivity"
+                  android:label="@string/theme_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.anddoes.launcher.THEME"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                    android:name="com.telsacoilsw.launcher.calendarIconArray"
+                    android:resource="@array/date"/>
+        </activity>
+    </application>
+
+</manifest>
